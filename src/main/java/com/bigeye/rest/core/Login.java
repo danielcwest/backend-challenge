@@ -17,7 +17,7 @@ import org.joda.time.DateTime;
 @Table(name = "login")
 public class Login {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
     @Column(name = "login_time")

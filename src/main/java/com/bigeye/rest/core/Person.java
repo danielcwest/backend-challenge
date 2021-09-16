@@ -1,6 +1,7 @@
 package com.bigeye.rest.core;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
+import java.util.Collections;
 import java.util.List;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -15,7 +16,7 @@ import javax.persistence.Table;
 @Table(name = "person")
 public class Person {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     @Column(name = "full_name", nullable = false)
@@ -27,6 +28,10 @@ public class Person {
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "person")
     @JsonManagedReference
     private List<Login> logins;
+
+    public Person() {
+        this.logins = Collections.emptyList();
+    }
 
     public int getId() {
         return id;

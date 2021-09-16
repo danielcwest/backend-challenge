@@ -47,8 +47,8 @@ The following curl commands should return valid results:
 Tasks
 -----
 1. We already have code for the person retrieve function, implement the other CRUD functions for Person
-2. Implement CRUD functions for logins
-3. Implement a function to retrieve all logins for a given user
+2. Implement a function to retrieve all logins for a given person
+3. Implement the CRUD functions for Logins
 4. Testing (if we have time)
 
 Things we are looking for
