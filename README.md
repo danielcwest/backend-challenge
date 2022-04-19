@@ -1,4 +1,4 @@
-# Bigeye backend code challenge
+# backend code challenge
 
 Prerequisites
 -------------
